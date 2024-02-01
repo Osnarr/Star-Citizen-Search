@@ -21,11 +21,7 @@
     If you wish to use your own database, set up the connection details in the `.env` file:
   </p>
 
-  <pre>
-    <code>
-      DATABASE_URI="your-database-uri"
-    </code>
-  </pre>
+  <pre> <code>DATABASE_URI="your-database-uri"</code> </pre>
 
   <h2>TODO List</h2>
 
