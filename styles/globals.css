@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  --main-text-color: #FDAA40;
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+.link {
+  color: blue;
+
+}
+
+.link:hover {
+  border-bottom: 1px blue;
+}
+
+#menu-icon {
+  font-size: 3.6rem;
+  color: #fff;
+  display: none;
+}
+
+.helper-background {
+  background-image: url('/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loading-spinner {
+  text-align: center;
+}
+
+#loading-text {
+  animation: fadeInOut 2s linear infinite;
+}
+
+#loading-dots::after {
+  content: ' .';
+  animation: dots 2s steps(4, end) infinite;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes dots {
+  0% {
+    content: ' .';
+  }
+  25% {
+    content: ' ..';
+  }
+  50% {
+    content: ' ...';
+  }
+  75% {
+    content: ' ....';
+  }
+  100% {
+    content: ' .';
+  }
+}
+
+.base {
+  background-color: #1f2937d2;
+  --tw-backdrop-blur: blur(16px);
+
+  -webkit-backdrop-filter:
+    var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+
+  backdrop-filter:
+    var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
