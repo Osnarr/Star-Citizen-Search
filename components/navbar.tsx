@@ -17,14 +17,10 @@ import clsx from "clsx";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 import {
-	TwitterIcon,
 	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
-	SearchIcon,
+
 } from "@/components/icons";
 
-import { Logo } from "@/components/icons";
 import Image from "next/image"
 export const Navbar = () => {
 
@@ -85,7 +81,6 @@ export const Navbar = () => {
 					<GithubIcon className="text-default-500" />
 				</Link>
 				<ThemeSwitch />
-				<NavbarMenuToggle />
 			</NavbarContent>
 
 			<NavbarMenu>
